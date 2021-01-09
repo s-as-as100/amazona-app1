@@ -117,6 +117,9 @@ img.medium {
   margin: 0.1rem;
 
 }
+.rating :last-child {
+  color: #404040;
+}
 
 
 

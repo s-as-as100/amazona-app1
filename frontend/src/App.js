@@ -1,6 +1,8 @@
  import React from 'react';
 import { render } from 'react-dom';
+ 
 import data from './data';
+import Product from './components/product';
 
 function App() {
   
@@ -20,10 +22,11 @@ function App() {
             <div>
          <div className="row center">
              {data.products.map((product) => (
-                    <product key={product._js} product={product}></product>
+                    <Product key={product._id} product={product}></Product>
              ))}
              
              </div>
+
               </div>
              </main>
          
