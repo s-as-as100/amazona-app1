@@ -3,7 +3,7 @@ import Product from './../components/product';
 //import ProductScreen from './ProductScreen';
 
 import data from '../data';
-import Rating from '../components/Rating';
+import Rating from '../components/rating';
 //import data from './../data';
 import { Link } from 'react-router-dom';
 

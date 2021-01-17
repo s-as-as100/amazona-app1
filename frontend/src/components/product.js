@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Rating from './Rating';
+import Rating from './rating';
 import App from './../App';
 
 export default function Product(props) {
