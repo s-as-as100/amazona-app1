@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from './../components/product';
+//import Product from './../components/product';
 //import ProductScreen from './ProductScreen';
 
 import data from '../data';
@@ -8,6 +8,7 @@ import Rating from '../components/rating';
 import { Link } from 'react-router-dom';
 
 export default function ProductScreen(props) {
+    console.log("ProductScreen-->",props)
      const product = data.products.find((x) => x._id === props.match.params.id);
      if (!product) {
          return <div> Product Not found</div>
@@ -17,10 +18,7 @@ export default function ProductScreen(props) {
             <Link to="/">Back to result</Link>
         <div className="row top">
           <div className="col-2">
-  <img className="large" src={product.image} alt={product.name}>
-
-  </img>
-
+            <img className="large" src={product.image} alt={product.name}></img>
         </div>
         <div className="col-1">
             <ul>
@@ -30,9 +28,7 @@ export default function ProductScreen(props) {
                 <li>
                     <Rating 
                     rating={product.rating}
-                    numReviews={product.numReviews}
-                    >
-
+                    numReviews={product.numReviews}>
                     </Rating>
                 </li>
                 <li>
